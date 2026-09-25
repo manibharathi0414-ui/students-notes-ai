@@ -80,20 +80,42 @@ st.markdown(
         font-weight: 700;
         margin-top: 30px;
         margin-bottom: 15px;
+        color: {text};
     }}
 
+    /* Buttons */
     div.stButton > button {{
         width: 100%;
         border-radius: 12px;
         padding: 12px;
         font-weight: 600;
+        color: {text} !important;
+        background-color: {card};
+        border: 1px solid {border};
+    }}
+
+    /* PDF upload box */
+    [data-testid="stFileUploader"] {{
+        color: {text} !important;
+    }}
+
+    [data-testid="stFileUploader"] label {{
+        color: {text} !important;
+    }}
+
+    [data-testid="stFileUploader"] section {{
+        background-color: {card};
+        border: 1px solid {border};
+    }}
+
+    [data-testid="stFileUploader"] small {{
+        color: {text} !important;
     }}
 
     </style>
     """,
     unsafe_allow_html=True
 )
-
 
 # Title
 st.markdown(
