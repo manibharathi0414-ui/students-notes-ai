@@ -10,13 +10,6 @@ from google import genai
 load_dotenv()
 
 
-# Theme
-theme = st.radio(
-    "Theme",
-    ["☀️ Light Mode", "🌙 Dark Mode"],
-    horizontal=True
-)
-
 
 # Connect to Gemini
 client = genai.Client(
@@ -29,17 +22,10 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 
 
 # Page styling
-if theme == "🌙 Dark Mode":
-    background = "#0E1117"
-    text = "#FFFFFF"
-    card = "#161B22"
-    border = "#30363D"
-else:
-    background = "#FFFFFF"
-    text = "#111111"
-    card = "#F8F9FA"
-    border = "#DDDDDD"
-
+background="#FFFFFF"
+text="#111111"
+card="#F8F9FA"
+border="#DDDDDD"
 
 st.markdown(
     f"""
