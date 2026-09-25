@@ -104,8 +104,8 @@ st.markdown(
     }}
 
     [data-testid="stFileUploader"] section {{
-        background-color: {card};
-        border: 1px solid {border};
+    background-color: #FFFFFF !important;
+    border: 1px solid #CCCCCC !important;
     }}
 
     [data-testid="stFileUploader"] small {{
