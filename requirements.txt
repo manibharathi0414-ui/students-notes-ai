@@ -3,4 +3,4 @@ pypdf
 sentence-transformers
 torchvision
 python-dotenv
-openai
+google-genai
